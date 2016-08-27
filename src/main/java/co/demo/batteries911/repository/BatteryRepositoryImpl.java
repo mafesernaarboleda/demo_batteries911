@@ -72,6 +72,13 @@ public class BatteryRepositoryImpl implements BatteryRepository {
 			for (Battery battery : listBatteries) {
 				batteryModel.setCdBattery(battery.getCdBattery());
 				batteryModel.setDsBrand(battery.getDsBrand());
+				batteryModel.setDsCapacity(battery.getDsCapacity());
+				batteryModel.setDsAmperage(battery.getDsAmperage());
+				batteryModel.setDsCrankingAmps(battery.getDsCrankingAmps());
+				batteryModel.setDsDiameter(battery.getDsDiameter());
+				batteryModel.setDsHeight(battery.getDsHeight());
+				batteryModel.setDsVoltage(battery.getDsVoltage());
+				batteryModel.setDsWeight(battery.getDsWeight());
 			}
 			session.getTransaction().commit();
 		} catch (Exception e) {

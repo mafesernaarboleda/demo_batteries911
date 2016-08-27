@@ -25,6 +25,27 @@ public class Battery implements Serializable{
 	
 	@Column(name = "dsBrand")
 	private String dsBrand;
+	
+	@Column(name = "dsAmperage")
+	private String dsAmperage;
+	
+	@Column(name = "dsVoltage")
+	private String dsVoltage;
+	
+	@Column(name = "dsCapacity")
+	private String dsCapacity;
+	
+	@Column(name = "dsDiameter")
+	private String dsDiameter;
+	
+	@Column(name = "dsHeight")
+	private String dsHeight;
+	
+	@Column(name = "dsWeight")
+	private String dsWeight;
+	
+	@Column(name = "dsCrankingAmps")
+	private String dsCrankingAmps;
 
 	public Long getCdBattery() {
 		return cdBattery;
@@ -42,5 +63,60 @@ public class Battery implements Serializable{
 		this.dsBrand = dsBrand;
 	}
 
+	public String getDsAmperage() {
+		return dsAmperage;
+	}
+
+	public void setDsAmperage(String dsAmperage) {
+		this.dsAmperage = dsAmperage;
+	}
+
+	public String getDsVoltage() {
+		return dsVoltage;
+	}
+
+	public void setDsVoltage(String dsVoltage) {
+		this.dsVoltage = dsVoltage;
+	}
+
+	public String getDsCapacity() {
+		return dsCapacity;
+	}
+
+	public void setDsCapacity(String dsCapacity) {
+		this.dsCapacity = dsCapacity;
+	}
+
+	public String getDsDiameter() {
+		return dsDiameter;
+	}
+
+	public void setDsDiameter(String dsDiameter) {
+		this.dsDiameter = dsDiameter;
+	}
+
+	public String getDsHeight() {
+		return dsHeight;
+	}
+
+	public void setDsHeight(String dsHeight) {
+		this.dsHeight = dsHeight;
+	}
+
+	public String getDsWeight() {
+		return dsWeight;
+	}
+
+	public void setDsWeight(String dsWeight) {
+		this.dsWeight = dsWeight;
+	}
+
+	public String getDsCrankingAmps() {
+		return dsCrankingAmps;
+	}
+
+	public void setDsCrankingAmps(String dsCrankingAmps) {
+		this.dsCrankingAmps = dsCrankingAmps;
+	}
 	
 }
